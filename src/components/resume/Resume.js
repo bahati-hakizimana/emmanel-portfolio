@@ -2,7 +2,6 @@ import React, {  useState } from 'react'
 import Title from '../layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
-import Achievement from './Achievement';
 import Experience from "./Experience"
 
 const Resume = () => {
@@ -16,7 +15,7 @@ const Resume = () => {
         <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <li
             onClick={() =>
               setEducationData(true) &
@@ -60,26 +59,10 @@ const Resume = () => {
           >
             Experience
           </li>
-          <li
-            onClick={() =>
-              setEducationData(false) &
-              setSkillData(false) &
-              setExperienceData(false) &
-              setAchievementData(true)
-            }
-            className={`${
-              achievementData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi`}
-          >
-            Achievements
-          </li>
         </ul>
       </div>
       {educationData && <Education />}
       {skillData && <Skills />}
-      {achievementData && <Achievement />}
       {experienceData && <Experience />}
  
     </section>

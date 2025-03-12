@@ -1,42 +1,42 @@
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaUserMd, FaChartLine, FaDatabase, FaGlobe, FaUsers, FaBook } from "react-icons/fa";
+import { SiGooglescholar, SiBigcartel } from "react-icons/si";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaUserMd />,
+    title: "Global Health & Equity",
+    des: "Advancing research on health equity, access to care, and well-being for minority and vulnerable populations.",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
-    title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <SiBigcartel />,
+    title: "Health Data Science",
+    des: "Leveraging data-driven insights with R, Python, and STATA to improve healthcare systems and patient outcomes.",
   },
   {
     id: 3,
-    icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaChartLine />,
+    title: "Monitoring & Evaluation",
+    des: "Expert in tracking health programs' effectiveness and ensuring data-informed policy decisions.",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaDatabase />,
+    title: "Health Systems & Services",
+    des: "Improving healthcare delivery through data analysis, research, and system-based approaches.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaUsers />,
+    title: "Community Health Research",
+    des: "Focused on patient-reported outcomes, healthcare accessibility, and public health interventions.",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <SiGooglescholar />,
+    title: "Academic Research & Training",
+    des: "Assistant Professor and research leader shaping the future of global health equity and digital health.",
   },
 ];

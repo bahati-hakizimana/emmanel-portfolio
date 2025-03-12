@@ -1,6 +1,7 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import React from 'react';
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { SiPython, SiR, SiTableau, SiMicrosoftazure, SiStatamic } from "react-icons/si";
+
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -26,21 +27,24 @@ const Media = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaReact />
+              <SiPython /> {/* Python for health data analysis */}
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+              <SiR /> {/* R for statistical computing */}
             </span>
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <SiStatamic /> {/* STATA for health research */}
             </span>
             <span className="bannerIcon">
-              <SiFigma />
+              <SiTableau /> {/* Tableau for data visualization */}
+            </span>
+            <span className="bannerIcon">
+              <SiMicrosoftazure /> {/* Azure for cloud-based health data solutions */}
             </span>
           </div>
         </div>
       </div>
-  )
+  );
 }
 
-export default Media
+export default Media;
